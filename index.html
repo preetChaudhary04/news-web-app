@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Web App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="navigation-bar">
+        <a class="anchor" onclick="reload()" href="#">
+            <i class="fa-solid fa-radio"></i>
+            <h1 class="logo-name" id="logo-name">News Day</h1>
+        </a>
+        <div class="nav-options">
+            <p id="sports" onclick="showOptions(`sports`)">
+                <i class="fa-solid fa-baseball-bat-ball"></i> Sports
+            </p>
+            <p id="finance" onclick="showOptions(`finance`)">
+                <i class="fa-solid fa-hand-holding-dollar"></i> Finance
+            </p>
+            <p id="politics" onclick="showOptions(`politics`)">
+                <i class="fa-solid fa-hand-fist"></i> Politics
+            </p>
+            <p id="technology" onclick="showOptions(`technology`)">
+                <i class="fa-solid fa-robot"></i> Technology
+            </p>
+            <p id="stocks" onclick="showOptions(`stocks`)">
+                <i class="fa-solid fa-arrow-trend-up"></i> Stocks
+            </p>
+        </div>
+
+        <div class="search-section">
+            <input type="text" name="" id="search-bar" class="search-bar" value="" placeholder="e.g. Science">
+            <button class="search-button" id="search-button"><i class="fa-solid fa-magnifying-glass"></i>
+                Search</button>
+        </div>
+    </div>
+
+    <div class="card-content" id="card-content">
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <i class="fa-regular fa-copyright"> : </i>
+        <a href="https://github.com/preetChaudhary04" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+        <a href="https://www.linkedin.com/in/preet-chaudhary-pc/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

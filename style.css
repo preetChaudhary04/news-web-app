@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-three);
+}
+
+:root {
+    --color-first: #2E333B;
+    --color-two: #444554;
+    --color-three: #8F888F;
+    --blue-shade-color: rgb(0, 140, 255);
+
+}
+
+/* navigation bar */
+
+.navigation-bar {
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    align-items: center;
+    background-color: var(--color-first);
+}
+
+.fa-bars {
+    font-size: larger;
+}
+
+.anchor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.fa-radio {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-name {
+    font-weight: bolder;
+    cursor: pointer;
+    color: var(--blue-shade-color);
+}
+
+.nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.nav-options i {
+    font-size: 13px;
+}
+
+.nav-options p:hover {
+    cursor: pointer;
+    color: rgba(17, 17, 190, 0.812);
+}
+
+.nav-options .active {
+    color: var(--blue-shade-color);
+}
+
+.search-bar {
+    height: 25px;
+    width: 220px;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-button {
+    height: 25px;
+    width: auto;
+    border: none;
+    border-radius: 4px;
+    padding: 0 4px;
+    background-color: var(--blue-shade-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-button i {
+    font-size: 12px;
+}
+
+/*main body*/
+
+.card-content {
+    display: grid;
+    width: 80%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: var(--color-two);
+    padding: 11px;
+    border-radius: 3px;
+    margin-top: 25px;
+    cursor: pointer;
+    margin-inline: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    background-color: var(--color-first);
+}
+
+.card img {
+    width: 100%;
+    height: 45%;
+}
+
+.card h3 {
+    margin-top: 10px;
+    padding: 3px;
+    color: var(--blue-shade-color);
+}
+
+.card h6 {
+    margin: 10px 0;
+    padding: 2px;
+    color:  rgb(122, 195, 255);
+
+}
+
+.card p {
+    margin: 10px 0;
+    padding: 2px;
+}
+
+/*footer*/
+
+.footer {
+    background-color: var(--color-first);
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    gap: 10px;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #stocks {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    #technology {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    #politics {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    #finance {
+        display: none;
+    }
+
+    #sports {
+        display: none;
+    }
+
+    .logo-name {
+        font-size: 29px;
+    }
+}
+
+
+@media only screen and (max-width:490px) {
+    .navigation-bar {
+        height: 70px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
+        align-items: center;
+        background-color: #2E333B;
+        flex-direction: column;
+    }
+
+    .logo-section {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .home {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .fa-radio {
+        font-size: 18px;
+        color: var(--blue-shade-color);
+    }
+
+    .logo-name {
+        font-size: 25px;
+    }
+
+    .search-bar {
+        height: 20px;
+    }
+
+    .search-button {
+        height: 20px;
+    }
+}
